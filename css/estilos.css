@@ -90,3 +90,69 @@ box-shadow: 8px 7px 10px 6px #08FFF3;
     -webkit-box-shadow: 8px 7px 10px 6px #08FFF3; 
 box-shadow: 8px 7px 10px 6px #37faf0;
 }
+
+.focus-in-contract {
+	animation: focus-in-contract 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes focus-in-contract {
+    0% {
+      letter-spacing: 1em;
+      filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      filter: blur(0px);
+      opacity: 1;
+    }
+  }
+
+  .swing-in-top-fwd:hover {
+	animation: swing-in-top-fwd 1s ease-in both;
+}
+
+@keyframes swing-in-top-fwd {
+    0% {
+      transform: rotateX(-100deg);
+      transform-origin: top;
+      opacity: 0;
+    }
+    100% {
+      transform: rotateX(0deg);
+      transform-origin: top;
+      opacity: 1;
+    }
+  }
+  
+  .fondtext:hover {
+	animation: ggg 1s ease-in both;
+}
+
+@keyframes ggg {
+    0% {
+   background-color: #ffffff;
+    }
+    100% {
+     background-color: aquamarine;
+     color: black;
+    }
+  }
+
+  .fondo20 {
+      background-color: aquamarine;
+  }
+
+  .color-change-2x {
+	animation: color-change-2x 2s linear infinite alternate both;
+}
+
+@keyframes color-change-2x {
+    0% {
+      background: #19dcea;
+    }
+    100% {
+      background: #b22cff;
+    }
+  }
+  
+
